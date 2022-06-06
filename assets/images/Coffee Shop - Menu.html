@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5501/pages/menu.html -->
+<html lang="en" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Coffee Shop - Menu_files/css2" rel="stylesheet">
+
+    <link href="./Coffee Shop - Menu_files/global.css" rel="stylesheet">
+    <link href="./Coffee Shop - Menu_files/menu.css" rel="stylesheet">
+    <title>Coffee Shop - Menu</title>
+  </head>
+
+  <body data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="">
+    <nav class="nav-bar">
+      <a href="http://127.0.0.1:5501/index.html" class="nav-bar__logo"><img src="./Coffee Shop - Menu_files/coffee-beans-logo-and-footer.svg" alt="coffee bean logo"></a>
+      <h2>nitro</h2>
+      <ul class="nav-bar__list">
+        <li class="nav-bar__item items--uppercase">
+          <a href="http://127.0.0.1:5501/index.html">about</a>
+        </li>
+        <li class="nav-bar__item items--uppercase">
+          <a href="http://127.0.0.1:5501/pages/menu.html">menu</a>
+        </li>
+        <li class="nav-bar__item items--uppercase">
+          <a class="btn--blue" href="http://127.0.0.1:5501/pages/menu.html">shop now</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="main-section">
+        <section class="main-section__menu">
+          <div class="main-header">
+            <h1 class="main-header__heading">menu</h1>
+          </div>
+        </section>
+        <section>
+          <ul class="menu__options">
+            <li class="items--uppercase">
+              <a class="menu__item" href="http://127.0.0.1:5501/pages/menu.html#">hot drinks</a>
+            </li>
+            <li class="items--uppercase">
+              <a class="menu__item" href="http://127.0.0.1:5501/pages/menu.html#">cold drinks</a>
+            </li>
+            <li class="items--uppercase">
+              <a class="menu__item" href="http://127.0.0.1:5501/pages/menu.html#">pastries</a>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <article class="products">
+        <section class="hot-drinks__section">
+          <h2>Hot Drinks</h2>
+          <div class="products__item">
+            <h3>In house Brew</h3>
+            <p class="products__description">
+              Our in-house medium roast is a classic balance between sweet
+              vanilla, nutty hazelnut, and a smooth low acidity to bring
+              everything together.
+            </p>
+            <p class="products__price">$2.99</p>
+          </div>
+
+          <div class="products__item">
+            <h3>Expresso</h3>
+            <p class="products__description">
+              A balance between bold and smooth, powerful and sweet, our
+              signature espresso blend is a complex flavor profile. It features
+              strong notes of semi-sweet chocolate and caramel, with mild
+              acidity and a bright floral finish.
+            </p>
+            <p class="products__price">$4.99</p>
+          </div>
+        </section>
+        <section class="cold-drinks__section">
+          <h2>Cold Drinks</h2>
+          <div class="products__item">
+            <h3>Cold Brew</h3>
+            <p class="products__description">
+              Our bright and delicious coffee blend, brewed over ice to give you
+              a cold coffee freshness with all the flavor of our amazing
+              in-house coffee.
+            </p>
+            <p class="products__price">$3.99</p>
+          </div>
+
+          <div class="products__item">
+            <h3>Iced Chai Latte</h3>
+            <p class="products__description">
+              A creamy drink with a kick, this drink features spicy chai tea
+              blended with your choice of milk and poured over ice.
+            </p>
+            <p class="products__price">$6.99</p>
+          </div>
+        </section>
+        <section class="pastries__section">
+          <h2>Pastries</h2>
+          <div class="products__item">
+            <h3>Bacon Oatmeal Raisin Cookie</h3>
+            <p class="products__description">
+              An infused bacon, sugar and egg mixture is folded into a perfect
+              blend of oats, flour, raisins and cinnamon to create a soft and
+              chewy textured cookie.
+            </p>
+            <p class="products__price">$3.50</p>
+          </div>
+
+          <div class="products__item">
+            <h3>Blueberry, Lemon and Thyme Muffin</h3>
+            <p class="products__description">
+              Tart and sweet, this classic blueberry and lemon combination comes
+              with an earthy twist.
+            </p>
+            <p class="products__price">$2.50</p>
+          </div>
+        </section>
+      </article>
+    </main>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

@@ -1,0 +1,44 @@
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-size: 3em;
+  font-weight: 300;
+  margin: 0;
+}
+
+h2,
+p {
+  margin: 0;
+}
+h3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+nav,
+main {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+p,
+li {
+  font-size: 1.25em;
+  display: inline-block;
+}
+
+.nav-bar a,
+h2,
+ul {
+  display: inline-block;
+  vertical-align: baseline;
+}
+a {
+  text-decoration: none;
+}
